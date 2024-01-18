@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Personal Portfolio Website</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/bdfd9733c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+      <div class="container">
+            <nav>
+                  <img src="Image/Logo.png" alt="logo">
+                  <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-xmark" onclick="closemenu()"></i>
+                  </ul>
+                  <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+           <div class="header-text">
+            <h1>Hello I Am<br>Asis, Joshua Eli</h1>
+            <p>Graphic Artist &</p>
+            <p>2D and 3D Digital Arts</p>
+           </div>
+      </div>
+</div>
+<!-------------about------------>
+<div id="about">
+      <div class="container">
+            <div class="row">
+                  <div class="about-col-1">
+                        <img src="Image/user.png">
+                  </div>
+                  <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>To work for an organization that provides me with the opportunity to improve my skills and knowledge to grow along with the organization's objective and to contribute to the progress of the company.
+                        </p>
+
+                        <div class="tab-titles">
+                              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                              <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                              <ul>
+                                    <li><span>Graphic Artist</span><br>Poster,logos</li>
+                                    <li><span>Digital Arts</span><br>Blender</li>
+                              </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                              <ul>
+                                    <li><span>80 Hours Immersion Training</span><br>2019-Assemble and disassemble of desktop</li>
+                                    <li><span>Graphic Artist</span><br>SHS Capstone Development</li>
+                              </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                              <ul>
+                                    <li><span>2020-present</span><br>Bachelor of Science in information Technology</li>
+                                    <li><span>2018-2020</span><br>Information and Communication Technology</li>
+                              </ul>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</div>
+<!-- -----------services------------- -->
+<div id="services">
+      <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="sevices-list">
+                  <div>
+                        <i class="fa-solid fa-palette"></i>
+                        <h2>Graphic Artist</h2>
+                        <p>To work for an organization that provides me with the opportunity to improve my skills and knowledge to grow along with the organization's objective and to contribute to the progress of the company.</p>
+                        <a href="#">Learn more</a>
+                  </div>
+                  <div>
+                        <i class="fa-brands fa-unity"></i>
+                        <h2>Gidital Arts</h2>
+                        <p>To work for an organization that provides me with the opportunity to improve my skills and knowledge to grow along with the organization's objective and to contribute to the progress of the company.</p>
+                        <a href="#">Learn more</a>
+                  </div>
+                  
+            </div>
+      </div>
+</div>
+<!-- -----------portfolio------------ -->
+<div id="portfolio">
+      <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                  <div class="work">
+                        <img src="Image/work1.png">
+                        <div class="layer">
+                              <h3>Chess Pieces</h3>
+                              <p>Chess is one of the oldest and most popular board games. It is played by two opponents on a checkered board with specially designed pieces of contrasting colours, commonly white and black. The objective of the game is to capture the opponent's king.</p>
+                              <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                  </div>
+                  <div class="work">
+                        <img src="Image/work2.png">
+                        <div class="layer">
+                              <h3>Poster</h3>
+                              <p>A poster is a large sheet that is placed either on a public space to promote something or on a wall as decoration.</p>
+                              <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                  </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+      </div>
+</div>
+<!-- -----------contact----------- -->
+<div id="contact">
+      <div class="container">
+            <div class="row">
+                  <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> 202111017.asis.joshuaeli@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 09935589277</p>
+                        <div class="social-icons">
+                              <a href="//facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                        <a href="Image/Cv.pdf" download class="btn btn2">Download CV</a>
+                  </div>
+                  <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                              <input type="text" name="Name" placeholder="Your Name" required>
+                              <input type="email" name="Email" placeholder="Your Email" required>
+                              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                              <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                  </div>
+            </div>
+      </div>
+      <div class="Visit">
+            <p>Thank you <i class="fa-solid fa-heart"></i> for visit Our Website! </p>
+      </div>
+</div>
+
+<script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+      }
+
+</script>
+<script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+            sidemenu.style.right = "0";
+      }
+      function closemenu(){
+            sidemenu.style.right = "-200px";
+      }
+
+</script>
+<script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyLccEw4I9R5u26JxL872t8xQb_5Rd1fyEjJfe71KMTB8SPfFCN73fWYC50PeRbk4cz/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                  msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+</html>
